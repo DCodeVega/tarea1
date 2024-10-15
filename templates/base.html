@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IngenierosUnidos</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+    <!-- <link rel="stylesheet" href="styleBase.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Logo de la empresa" class="logo">
+        <!-- <img src="img/_12659f05-31b8-40c2-8d61-5a0184e5e491.jpeg" alt="Logo de la empresa" class="logo"> -->
+        <h1>Ingenieros Unidos</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Inicio</a></li>
+                <li><a href="{{ url_for('about') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('services') }}">Servicios</a></li>
+                <li><a href="{{ url_for('news') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contact') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="social-buttons">
+            <a href="#" class="social-button">Facebook</a>
+            <a href="#" class="social-button">Twitter</a>
+            <a href="#" class="social-button">Instagram</a>
+        </div>
+        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

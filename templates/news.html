@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Noticias - Mi Empresa{% endblock %}
+
+{% block content %}
+    <h2>Últimas Noticias</h2>
+
+    <article class="news-item">
+        <img src="{{ url_for('static', filename='nuevo producto is.jpg') }}" alt="Noticia 1" width="200">
+        <h3>Lanzamiento de Nuevo Producto</h3>
+        <p>Estamos emocionados de anunciar el lanzamiento de nuestro último producto...</p>
+    </article>
+
+    <article class="news-item">
+        <img src="{{ url_for('static', filename='expasion internacional.png') }}" alt="Noticia 2" width="200">
+        <h3>Expansión Internacional</h3>
+        <p>Mi Empresa se expande a nuevos mercados internacionales...</p>
+    </article>
+
+    <article class="news-item">
+        <img src="{{ url_for('static', filename='reconocimiento de la industria.jpg') }}" alt="Noticia 3" width="200">
+        <h3>Reconocimiento de la Industria</h3>
+        <p>Nos enorgullece anunciar que hemos sido galardonados con...</p>
+    </article>
+{% endblock %}

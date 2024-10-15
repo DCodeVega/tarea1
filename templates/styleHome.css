@@ -1,0 +1,103 @@
+
+.home-page {
+    /* Todo el CSS aquí */
+}
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la sección de testimonios */
+.testimonials {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.testimonials h3 {
+    color: #3498db;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Estilos para la sección de llamada a la acción (CTA) */
+.cta {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.cta h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #27ae60;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .testimonials, .cta {
+        padding: 20px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+    }
+}

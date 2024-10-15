@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Servicios - Mi Empresa{% endblock %}
+
+{% block content %}
+    <h2>Nuestros Servicios</h2>
+
+    <div class="service">
+        <img src="{{ url_for('static', filename='servicios1.jpeg') }}" alt="Servicio1" width="150">
+        <img src="{{ url_for('static', filename='servicios2.jpeg') }}" alt="Servicios2" width="150">
+        <h3>Consultoría Empresarial</h3>
+        <p>Ofrecemos asesoramiento experto para optimizar sus operaciones.</p>
+        <a href="#" class="button">Leer más</a>
+    </div>
+
+    <div class="service">
+        <img src="{{ url_for('static', filename='desarrollo de software.jpg') }}" alt="Servicio 2">
+        <h3>Desarrollo de Software</h3>
+        <p>Creamos soluciones de software personalizadas para su negocio.</p>
+        <a href="#" class="button">Leer más</a>
+    </div>
+
+    <div class="service">
+        <img src="{{ url_for('static', filename='marketing digital.jpg') }}" alt="Servicio 3" width="250">
+        <h3>Marketing Digital</h3>
+        <p>Estrategias de marketing digital para impulsar su presencia en línea.</p>
+        <a href="#" class="button">Leer más</a>
+    </div>
+{% endblock %}

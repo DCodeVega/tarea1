@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Quiénes Somos - Mi Empresa{% endblock %}
+
+{% block content %}
+    <h2>Quiénes Somos</h2>
+    <p>Fundada en 2010, Mi Empresa ha sido líder en innovación y servicio al cliente.</p>
+    
+    <h3>Nuestra Misión</h3>
+    <p>Proporcionar soluciones de calidad que impulsen el éxito de nuestros clientes.</p>
+
+    <h3>Nuestra Visión</h3>
+    <p>Ser reconocidos globalmente como líderes en soluciones empresariales innovadoras.</p>
+
+    <section class="team">
+        <h3>Nuestro Equipo</h3>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='fundador1.jpg') }}" alt="Miembro del equipo 1" width="200">
+            <h4>Juan Diego Vega Martinez</h4>
+            <p>CEO y Fundador</p>
+        </div>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='directora.jpeg') }}" alt="Miembro del equipo 2" width=200>
+            <h4>Lucero Angela Vega Martinez</h4>
+            <p>Directora de Operaciones y Diseño</p>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Mi Empresa{% endblock %}
+
+{% block content %}
+    <h2>Bienvenido a Mi Empresa</h2>
+    <p>Ofrecemos soluciones innovadoras para tu negocio.</p>
+    
+    <section class="testimonials">
+        <h3>Testimonios de Clientes</h3>
+        <img src="{{ url_for('static', filename='Usuario 1.png') }}" alt="Logo de la empresa" class="logo" width="50">
+        <blockquote>"Excelente servicio, superó nuestras expectativas." - Cliente A</blockquote>
+        <img src="{{ url_for('static', filename='Usuario 2.png') }}" alt="Logo de la empresa" class="logo" width="50">
+        <blockquote>"Increíble atención al cliente y resultados." - Cliente B</blockquote>
+    </section>
+
+    <section class="cta">
+        <h3>¿Listo para empezar?</h3>
+        <a href="{{ url_for('contact') }}" class="button">Contáctanos ahora</a>
+    </section>
+{% endblock %}
